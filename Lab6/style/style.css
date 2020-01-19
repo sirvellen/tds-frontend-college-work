@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat Bold', arial;
+}
+.container {
+	margin-right: 5em;
+	margin-left: 5em;
+}
+.item img {
+	width: 20px;
+}
+button img {
+	width: 20px;
+}
+section {
+	width: 100%;
+}
+.top-bar {
+	width: 100%;
+	height: 40px;
+	background-color: #191919;
+}
+	.top-bar .container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.top-bar span {
+		cursor: pointer;
+		font-family: 'Material Icons';
+		color: #707070;;
+	}
+	.top-bar span:hover {
+		color: white;
+	}
+		.top-bar-menu {
+			width: 15%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+			.top-bar-menu a {
+				color: #707070;
+				text-decoration: none;
+			}
+			.top-bar-menu a:hover {
+				color: white;
+				text-decoration: underline;
+			}
+.nav-bar {
+	width: 100%;
+	height: 800px;
+	background-image: url('../img/bg-title.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+}
+	.nav-menu {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: wrap row;
+	}
+		.logo p {
+			font-weight: bold;
+			font-size: 24px;
+			color: white;
+		}
+		nav {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			flex-flow: wrap row;
+		}
+		.item {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			border-bottom: 3px solid rgba(0, 0, 0, 0);
+			padding: 10px;
+			text-align: center;
+		}
+			.item a {
+				font-size: 14px;
+				font-weight: bold;
+				text-decoration: none;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+				.item a:hover {
+					color: grey;
+				}
+			.item span {
+				cursor: pointer;
+				font-family: 'Material Icons';
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+			}
+			.item:hover {
+				border-bottom: 3px solid #ff4081;
+			}
+		.nav-buttons {
+			display: flex;
+			align-items: center;
+		}
+		.nav-buttons button {
+			font-family: 'Material Icons';
+			font-size: 20px;
+			color: white;
+			background-color: rgba(0, 0, 0, 0);
+			border: 1px solid rgba(0, 0, 0, 0);
+		}
+		.nav-buttons div {
+			width: 1px;
+			height: 20px;
+			background-color: #707070;
+			margin-left: 5px;
+			margin-right: 5px; 
+		}
+		.nav-buttons button:hover {
+			color: grey;
+			cursor: pointer;
+		}
+		.search-panel {
+			display: none;
+		}
+	.title {
+		margin-top: 180px;
+		height: 210px;
+		text-align: center;
+		color: white;
+	}
+		.caption {
+			margin-bottom: 20px;
+		}
+		.caption h4 {
+			text-transform: uppercase;
+			font-size: 28px;
+			font-weight: 500;
+			color: #aeaeaf;
+			margin-bottom: 10px;
+		}
+		.caption h1 {
+			margin-top: 0;
+			text-transform: uppercase;
+			font-size: 42px;
+			font-weight: 900;
+		}
+	.title button {
+		width: 170px;
+		height: 45px;
+		border: 1px solid #303f9f;
+		border-radius: 50px;
+		background-color: #303f9f;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 20px;
+		transition: 200ms;
+	}
+		.title button:hover {
+			background-color: #405fbf;
+			cursor: pointer;
+		}
+	.author {
+		padding-top: 80px;
+	}
+		#author-name {
+			font-weight: bold;
+			font-size: 14px;
+		}
+		#article-date {
+			font-weight: 500;
+			font-size: 12px;
+			color: #707070!important;
+		}
+		.article-stat {
+			width: 100%;
+			text-align: center;
+		}
+			.article-stat span {
+				font-weight: bold;
+				font-size: 14px;
+				color: #707070;
+			}
+			#like {
+				font-family: 'Material Icons';
+			}
+			.fas {
+				color: #707070;
+			}
+			#likes {
+				margin-left: 40px;
+			}
+		.arrow {
+			font-family: 'Material Icons';
+			color: white;
+			text-decoration: none;
+			font-size: 42px;
+			position: absolute;
+			top: 40%;
+		}
+			#left {
+				left: 2%;
+			}
+			#right {
+				right: 2%;
+			}
+
+main {
+	width: 100%;
+	background-color: #f5f5f5;
+}
+	.sort {
+		height: 60px;
+		background-color: white;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		border-bottom: 1px solid rgba(221, 221, 221, 80%);
+		margin-bottom: 40px;
+	}
+		.sort span {
+			font-size: 16px;
+			font-weight: bold;
+			color: black;
+		}
+		.sort button {
+			margin-left: 10px;
+			background-color: #f5f5f5;
+			padding: 5px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border: 1px solid rgba(0, 0, 0, 0);
+			border-radius: 50px;
+			font-size: 16px;
+			font-weight: 500;
+			color: black;
+			transition: 200ms;
+		}
+			.sort button:hover {
+				cursor: pointer;
+				background-color: white;
+				border: 1px solid #4f5fbb;
+				color: #4f5fbb;
+			}
+	main .container {
+		display: flex;
+		justify-content: space-between;
+	}
+		.articles {
+			width: 820px;
+		}

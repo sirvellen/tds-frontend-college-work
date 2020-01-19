@@ -1,0 +1,594 @@
+* {
+	margin: 0;
+	transition: all 0.5s;
+  	-moz-transition: all 1s; /* Firefox 4 */
+  	-webkit-transition: all 1s; /* Safari and Chrome */
+  	-o-transition: all 1s; /* Opera */
+}
+body {
+	font-family: "Segoe UI";
+}
+section {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.container {
+	width: 100%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+div, img, p, span, section {
+	-webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+
+    -ms-user-select: none;
+
+    cursor: default;
+}
+/*отменяет выделение https://learn.javascript.ru/unselectable#sposob-3-svoystvo-user-select */
+header {
+	width: 100%;
+	height: 150px;
+	background-color: rgba(68, 79, 86, 85%);
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	position: fixed;
+	 transition: all 200ms;
+  	-moz-transition: all 200ms; /* Firefox 4 */
+  	-webkit-transition: all 200ms; /* Safari and Chrome */
+  	-o-transition: all 200ms; /* Opera */
+  	z-index: 10;
+}
+	.header-logo {
+		font-size: 30px;
+		font-weight: bold;
+		cursor: default;
+	}
+		.header-logo span {
+			color: #4bcaff;
+		}
+		.header-logo span:hover {
+			-moz-text-shadow:0 0 10px #ffffff; 
+			-webkit-text-shadow:0 0 10px #ffffff; 
+			text-shadow:0 0 15px #ffffff;
+		}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+	}
+	nav {
+		align-items: center;
+	}
+	nav a {
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 10px;
+		border: 2px solid rgba(0, 0, 0, 0%);
+	}
+	nav a:hover, a:active, a:focus {
+		color: #4bcaff;
+		border: 2px solid #4bcaff;
+	}
+	.glide {
+		height: 70px;
+		transition: all 1s;
+  		-moz-transition: all 1s; /* Firefox 4 */
+  		-webkit-transition: all 1s; /* Safari and Chrome */
+  		-o-transition: all 1s; /* Opera */
+	}
+main {
+	width: 100%;
+}
+	.quote {
+		height: 600px;
+		font-size: 3em;
+		font-weight: lighter;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        flex-flow: nowrap column;
+	}
+		.quote p {
+			line-height: 70px;
+			text-align: center;
+		}
+		.quote span {
+			padding-right: 10px;
+			padding-left: 10px; 
+			color: #f6f7f7;
+			background-color: rgba(74, 85, 92, 70%);
+		}
+	.services {
+		width: 100%;
+		height: 400px;
+		background-color: #4bcaff;
+		display: flex;
+		justify-content: center;
+	}
+		.services-top {
+			width: 100%;
+			height: 40px;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+		.services-top h3 {
+			color: white;
+			text-transform: uppercase;
+			font-weight: lighter;
+			font-size: 30px;
+		}
+		.services-top span {
+			width: 45px;
+			height: 3px;
+			background-color: white;
+		}
+		.table {
+			height: 400px;
+			width: 1170px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: nowrap row;
+		}
+			.service {
+				color: white;
+			}
+				.service h4 {
+					font-weight: 500;
+					font-size: 24px;
+					text-transform: uppercase;
+					margin-top: 20px;
+				}
+				.service p {
+					font-weight: 500;
+					font-size: 12px;
+					margin-top: 20px;
+					padding-right: 20px;
+				}
+	.portfolio {
+		width: 100%;
+		height: 840px;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+	}
+		.portfolio-top {
+			width: 100%;
+			height: 40px;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+		.portfolio-top h3 {
+			color: black;
+			text-transform: uppercase;
+			font-weight: lighter;
+			font-size: 30px;
+		}
+		.portfolio-top span {
+			width: 45px;
+			height: 3px;
+			background-color: black;
+		}
+		.filter {
+		}
+			.filter input {
+				background-color: rgba(0, 0, 0, 0);
+				color: black;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 500;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				border: 2px solid rgba(0, 0, 0, 0%);
+			}
+			.filter input:hover {
+				border: 2px solid #4bcaff;
+				color: #4bcaff;
+			}
+			.filter input:active, input:focus {
+				outline: none;
+				border: 2px solid #4bcaff;
+				color: #4bcaff;
+			}
+		.all {
+			width: 1170px;
+			padding-right: 40px;
+		}
+			.line {
+				display: flex;
+				flex-flow: wrap row;
+				justify-content: space-between;
+				align-content: space-between;
+			}
+				figure {
+					width: 270px;
+					height: 270px;
+					position: relative;
+  					display: inline-block;
+  					overflow: hidden;
+  					margin-top: 30px;
+					background-color: #c2c2c2;
+				}
+				figure:hover:after {
+  					content: "+";
+  					background-color: rgba(0,0,0,0.4);
+  					position: absolute;
+  					left: 50%;
+  					top: 50%;
+  					transform: translate(-50%, -50%);
+  					color: #FFF;
+  					font-size: 5em;
+  					width: 100%;
+  					height: 100%;
+  					display: flex;
+  					justify-content: center;
+  					align-items: center;
+  					font-weight: lighter;
+				}
+	.section {
+		width: 100%;
+		height: 470px;
+		background-color: #515f67;
+	}
+		.section .container {
+			flex-flow: nowrap row;
+			justify-content: space-between;
+		}
+		.section-top {
+			width: 100%;
+			height: 40px;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+			.section h3 {
+				color: white;
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.section-top div {
+				width: 45px;
+				height: 3px;
+				background-color: white;
+			}
+		.section p {
+			width: 450px;
+			height: 180px;
+			font-size: 14px;
+			font-weight: 400;
+			color: white;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+		.section-bottom  {
+			width: 50%;
+			display: flex;
+			flex-direction: row;
+		}
+		.section a {
+			width: 140px;
+			height: 40px;
+			color: black;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 10px;
+			padding-top: 10px; 
+			border: 1px solid black;
+			text-decoration: none;
+			font-size: 14px;
+		}
+			.section a:hover {
+				border: 1px solid white;
+				color: white;
+
+			}
+			.twitter {
+		width: 100%;
+		height: 300px;
+		background-color: #4bcaff;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+		.twtter .container {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		.twitter-top {
+			width: 100%;
+			height: 40px;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+			.twitter h3 {
+				color: white;
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.twitter-top div {
+				width: 45px;
+				height: 3px;
+				background-color: white;
+			}
+			.twitter-top img {
+				position: absolute;
+				top: 10px;
+        		right: 0px;
+			}
+		.twitter p {
+			color: white;
+			font-size: 28px;
+			font-weight: lighter;
+			width: 1170px;
+        	margin-right: -50%;
+        	transform: translate(-50%, -50%)
+		}
+		.twitter span {
+			font-weight: 500;
+		}
+	.whois {
+		width: 100%;
+		height: 500px;
+		background-color: rgba(97, 107, 115, 70%);
+		position: inherit;
+	}
+		.whois-top {
+			
+		}
+			.whois h3 {
+				color: white;
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.whois-top div {
+				width: 45px;
+				height: 3px;
+				background-color: white;
+			}
+		.whois .article {
+        	display: flex;
+		}
+			.whois .article p {
+				color: white;
+				font-size: 14px;
+			}
+			.wileft-block {
+				width: 570px;
+			}
+			.wiright-block {
+				width: 570px;
+			}
+				.wimages {
+					width: 250px;
+					margin-top: 20px;
+					display: flex;
+					justify-content: space-between;
+				}
+					.wimages img {
+						padding: 10px;
+						border: 1px solid white;
+					}
+					.wimages img:hover {
+						border: 1px solid #4bcaff;
+					}
+					.wimages a:focus, a:active {
+						border: none;
+					}
+	.testimonials {
+		width: 100%;
+		height: 360px;
+		background-color: white;
+		position: inherit;
+	}
+		.testimonials-top {
+			width: 1170px;
+			position: relative;
+			top: 80px;
+        	left: 1130px;
+        	margin-right: -50%;
+        	transform: translate(-50%, -50%)
+		}
+			.testimonials h3 {
+				color: black;
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.testimonials-top div {
+				width: 45px;
+				height: 3px;
+				background-color: black;
+			}
+			.testimonials img {
+				position: absolute;
+				top: 10px;
+        		right: 20px;
+			}
+			.testimonials article {
+			width: 1170px;
+			position: relative;
+			top: 170px;
+        	left: 1130px;
+        	margin-right: -50%;
+        	transform: translate(-50%, -50%);
+        	display: flex;
+        	flex-flow: nowrap column;
+			}
+			.testimonials article p {
+				color: black;
+				font-size: 28px;
+				font-weight: lighter;
+			}
+			.testimonials article span {
+				color: #4bcaff;
+				font-size: 14px;
+				font-weight: bold;
+				margin-top: 20px;
+			}
+	.contact {
+		width: 100%;
+		height: 800px;
+		background-color: rgba(81, 95, 103, 70%);
+		position: inherit;
+	}
+	.contact-top {
+		}
+			.contact h3 {
+				color: white;
+				text-transform: uppercase;
+				font-weight: lighter;
+				font-size: 30px;
+			}
+			.contact-top div {
+				width: 45px;
+				height: 3px;
+				background-color: white;
+			}
+		.contact form {
+			width: 1170px;
+			position: relative;
+			top: 200px;
+        	left: 1130px;
+        	margin-right: -50%;
+        	transform: translate(-50%, -50%);
+        	display: flex;
+        	justify-content: space-between;
+		}
+			.inputs {
+				height: 205px;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+			}
+			.inputs input {
+				width: 470px;
+				height: 60px;
+				border: 1.5px solid white;
+				background-color: rgba(0, 0, 0, 0);
+				font-size: 2em;
+				color: white;
+			}
+				.inputs input:hover {
+					border: 1.5px solid #4bcaff;
+					color: white;
+					font-size: 2em;
+				}
+			.inputs p {
+				color: white;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 14px;
+				padding-bottom: 5px;
+			}
+			.message {
+				position: absolute;
+				top: 230px;
+				right: 0px;
+			}
+				.message p {
+					color: white;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 14px;
+					padding-bottom: 5px;
+				}
+				.contactsubmit {
+					margin-top: 20px;
+					color: white;
+					width: 370px;
+					height: 60px;
+					font-size: 14px;
+					background-color: #4bcaff;
+					border: none;
+				}
+					.contactsubmit:hover {
+						background-color: #29a8cc;
+						border: 0px;
+						outline: none;
+						cursor: pointer;
+					}
+				.contacttextarea {
+					width: 1170px;
+					height: 270px;
+					border: 1.5px solid white;
+					background-color: rgba(0, 0, 0, 0);
+					color: white;
+					font-size: 2em;
+				}
+					.contacttextarea:focus {
+						color: white;
+						font-size: 2em;
+					}
+			.contact-article p {
+				width: 570px;
+				-webkit-user-select: text;
+   				 /* user-select -- это нестандартное свойство */
+
+    			-moz-user-select: none;
+    			/* поэтому нужны префиксы */
+
+    			-ms-user-select: text;
+    			cursor: text;
+			}
+			.contact-article {
+				margin-top: 15px;
+				color: white;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+	footer {
+		width: 100%;
+		height: 170px;
+		background-color: #353f47;
+		
+		position: inherit;
+	}
+		.bottom-bar {
+			width: 1170px;
+			position: relative;
+			top: 50%;
+       		left: 1130px;
+        	margin-right: -50%;
+       		transform: translate(-50%, -50%);
+       		display: flex;
+       		justify-content: space-between;
+		}
+		.bottom {
+			text-decoration: none;
+			color: #515f67;
+			font-size: 12px;
+			font-weight: 500;
+		}
+			.bottom-bar a:hover {
+				color: #717f87;
+			}
+		.bottom-bar p {
+			width: 260px;
+		}
